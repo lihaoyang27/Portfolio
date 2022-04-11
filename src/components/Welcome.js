@@ -1,5 +1,5 @@
 import '../style/welcome.scss'
-import {useContext, useEffect, useState} from "react";
+import {useContext} from "react";
 import DataContext from "../helper/context";
 
 
