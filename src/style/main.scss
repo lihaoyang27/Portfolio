@@ -2,18 +2,22 @@
 .mainContainer{
  display: flex;
  width: 100vw;
- height: 100vh;
+ height: 100%;
  color: white;
 }
 
 .mainContainer .infoSection{
  display: flex;
  flex-direction: column;
- justify-content: space-evenly;
+ justify-content: center;
  align-items: center;
  width: 400px;
  border-right: 1px white solid;
  transition: 0.3s all linear;
+ position: sticky;
+ top: 0;
+ left: 0;
+ height: 100vh;
  &:hover{
   box-shadow: white 0 0 40px;
  }
@@ -63,10 +67,11 @@
  flex-direction: column;
  align-items: center;
 
+
  & .title{
-  height: 200px;
+  height: 140px;
   font-size: 3rem;
-  line-height: 200px;
+  line-height: 140px;
  }
  & .itemContainer{
   flex: 1;
