@@ -1,7 +1,9 @@
 import '../style/welcome.scss'
+import {useEffect} from "react";
 
 
 const Welcome = () => {
+
 
     return(
         <div className='welcomeContainer'>
