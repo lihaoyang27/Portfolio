@@ -1,12 +1,13 @@
 
 
-const Card = ({item}) =>{
-    console.log('img',item.img)
+const Card = ({item,id,handleClick}) => {
+    // const itemClass = item.stat ? " active " + item.state : ""
+
 
     return(
-        <div className='card' style={{backgroundImage:`url('../media/e-commerce1.jpg')`}}>
-            <img src={item.img} alt={item.id} />
-            {item.img}
+        <div className={'card ' + item.stat} onClick={()=>handleClick(id)}>
+            <img src={item.image} alt={item.id} />
+            {/*{item.img}*/}
             {/*<img src= alt={item.id} />*/}
             {/*<img src='../media/musicshop1.jpg' alt=''/>*/}
         </div>

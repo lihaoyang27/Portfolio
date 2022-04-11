@@ -5,7 +5,8 @@ const Game = () => {
 
     return(
         <div className='gameSection'>
-            <h1>Memory Game - React</h1>
+            <h1>Clear this game before you can see my portfolio</h1>
+            <h1>Memory Game</h1>
             <Cards/>
         </div>
     )

@@ -1,20 +1,29 @@
 import '../style/welcome.scss'
-import {useEffect} from "react";
+import {useContext, useEffect, useState} from "react";
+import DataContext from "../helper/context";
 
 
 const Welcome = () => {
+    const {setShowWel, setShowMain} = useContext(DataContext)
 
+    return (
+        <>
 
-    return(
-        <div className='welcomeContainer'>
+                    <div className='welcomeContainer' onClick={() => {
+                        setShowWel(false)
+                        setShowMain(true)
+                    }}>
 
-            <div className='fog'></div>
-            <div className='mask'>
-                <div className='lihaoyang'> </div>
-            </div>
+                        <div className='fog'></div>
+                        <div className='mask'>
+                            <div className='lihaoyang'></div>
+                        </div>
 
-        </div>
+                    </div>
+
+        </>
     )
+
 }
 
 export default Welcome
