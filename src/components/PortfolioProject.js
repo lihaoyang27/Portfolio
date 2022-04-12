@@ -36,11 +36,9 @@ const PortfolioProject = () => {
                 </div>
 
                 <div className='item'>
-                    <a href='https://github.com/lihaoyang27/clone_weatherStack_static-HTML-CSS-'>
                         <div className='itemTitle'>
                             LMS Management System
                         </div>
-                    </a>
                     <div className='itemImg lms1'></div>
                     <div className='itemImg lms2'></div>
 
